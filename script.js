@@ -3,7 +3,9 @@ const colors = [
     '#33FF57', // Green
     '#3357FF', // Blue
     '#FF33A1', // Pink
-    '#33FFF5'  // Cyan
+    '#33FFF5',  // Cyan
+    '#FFFFFF',  // White
+    '#000000'  // Black
 ];
 
 function getRandomColor() {
@@ -17,6 +19,7 @@ function changeColors() {
 
     document.body.style.backgroundColor = backgroundColor; // Set background color
     document.getElementById('clock').style.color = textColor; // Set text color
+    document.getElementsByClassName('message')[0].style.color = textColor;
 }
 
 // Change the colors every 5 seconds

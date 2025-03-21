@@ -1,24 +1,35 @@
-html, body {
-    height: 100%; /* Full height of the viewport */
-    width: 100%; /* Full width of the viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+body, html {
+    height: 100%;
+    margin: 0;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
-    background-color: #FF5733; /* Initial background color */
-    color: #ffffff; /* White text for better contrast */
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
-    transition: background-color 1s ease; /* Smooth transition */
 }
 
 .clock-container {
     text-align: center;
+    margin-bottom: 0; /* No space below the clock */
+    line-height: 1; /* Reduce line height to squeeze the div */
+    width: 100%; /* Make the clock container full width */
+    max-width: 600px; /* Set a max-width to match the message */
 }
 
 #clock {
     font-size: 5rem;
     font-weight: bold;
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
-    transition: color 1s ease; /* Smooth text color transition */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+    line-height: 0.8; /* Reduce line height to squeeze the text */
+}
+
+.message {
+    font-size: 1rem;
+    width: 100%; /* Ensure it takes full width */
+    max-width: 600px; /* Match the clock's max-width */
+    padding-left: 3px; /* Add some padding for better alignment */
+    margin-top: 0; /* Remove or reduce space above the message */
+    text-align: left; /* Left-align the text */
 }

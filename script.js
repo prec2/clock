@@ -23,7 +23,7 @@ function changeColors() {
 }
 
 // Change the colors every 5 seconds
-setInterval(changeColors, 5000);
+setInterval(changeColors, 60000);
 
 // Set the initial colors
 changeColors();
@@ -38,7 +38,7 @@ function updateClock() {
 }
 
 // Update the clock every second
-setInterval(updateClock, 10000);
+setInterval(updateClock, 1000);
 
 // Initialize the clock immediately
 updateClock();

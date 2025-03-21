@@ -38,7 +38,7 @@ function updateClock() {
 }
 
 // Update the clock every second
-setInterval(updateClock, 1000);
+setInterval(updateClock, 10000);
 
 // Initialize the clock immediately
 updateClock();
